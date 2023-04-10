@@ -38,8 +38,9 @@ export default Cards = () => {
         let info  = data?.data?.data
         setfiltetrrestorent(info)
         setrestorent(info)
-        console.log(info)
-        
+        console.log(info.map((e)=>{
+            e
+        }))
     }
  
     useEffect(()=>{
