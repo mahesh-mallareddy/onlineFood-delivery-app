@@ -183,3 +183,14 @@ padding: 5px 4em;
 .footer .register h4{
     margin:  0.5em;
 }
+
+
+.menudata{
+    font-weight: bolder;
+    padding: 1em 0;
+}
+.menulist{
+    font-weight: lighter;
+    padding-left: 2em;
+    
+}

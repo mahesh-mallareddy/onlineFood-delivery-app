@@ -7,22 +7,17 @@ import { useParams } from "react-router-dom";
     const [restomenulist,setrestomenulist] = useState([])
 
 async function getrestoinfo(){
-const fetchurl = await fetch("https://www.eatsure.com/v1/api/get_all_products/brand_id/"+paramsid+"/store_id/10159/source_id/13")
+const fetchurl = await fetch("https://www.eatsure.com/v1/api/get_all_products/brand_id/"+paramsid+"/store_id/10370/source_id/13")
 const data = await fetchurl.json()
 const restodata = data?.data?.collections
 
-const collections = restodata.map((e)=>{
-   if (e["is_elite"] === 1)
-   return e.products
+const collections = restodata.map((e , index)=>{
+   return e.products[0]
 });
 
-// const products = collections.map((r)=>{
-// return r
-// })
-
-// setrestomenulist(getrestodata)
-// console.log(products)
-
+setrestomenulist(restodata)
+console.log(data.data)
+console.log(restodata)
 console.log(collections)
 };  
     useEffect(()=>{
@@ -32,7 +27,17 @@ getrestoinfo()
     return(
         <div>
             it is restomenu components
-           
+           <ul>
+            { restomenulist.map((collection_data, index)=>{
+                return <li className="menudata" key={collection_data.collection_id}>{collection_data.collection_name}
+                <ul>
+                    {collection_data.products.map((products_data,index)=>{
+                        return <li className="menulist" key={products_data.product_id}> { products_data.product_name} </li>
+                    })}
+                </ul>
+                </li>
+            }) }
+           </ul>
         </div>
     )
 };
