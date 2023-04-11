@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import restolist from "./bodycardsdata";
+import { Link } from "react-router-dom";
 
 export const Restocards = ({ banner_image_es, brand_name, description }) => {
 
@@ -38,9 +39,7 @@ export default Cards = () => {
         let info  = data?.data?.data
         setfiltetrrestorent(info)
         setrestorent(info)
-        console.log(info.map((e)=>{
-            e
-        }))
+        console.log(info)
     }
  
     useEffect(()=>{
@@ -65,7 +64,9 @@ getcardsdata()
                 <div className="restocards2">
                     {
                         filterrestorent.map((restoin) => {
-                            return <Restocards {...restoin} keys={restoin.brand_id} />
+                        //    return ( <Link to={"/restomenu/" +restoin.brand_id} keys={restoin.brand_id}>
+                        return      <Restocards {...restoin}  />
+                            // </Link>)
                         }
                         )}
                 </div>
