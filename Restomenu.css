@@ -1,8 +1,10 @@
-.menudata {
+.restomenudata {
     max-width: 1100px;
     margin: auto;
 }
-
+.menudata .menu_head{
+font-size: x-large;
+}
 .menudata .menulist .menulist_img {
     max-height: 200px;
     /* max-width: 250px; */
@@ -13,8 +15,14 @@
     width: 100%;
     padding: 8px;
 }
+.menudata .menulist{
 
-.menudatalist {
+    margin: 1em 4px;
+}
+.menudata{
+    margin: 1em 0;
+}
+.menudata .restoall {
     flex-wrap: wrap;
     justify-content: space-evenly;
     display: flex;

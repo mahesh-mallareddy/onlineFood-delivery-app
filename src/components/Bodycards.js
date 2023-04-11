@@ -64,9 +64,9 @@ getcardsdata()
                 <div className="restocards2">
                     {
                         filterrestorent.map((restoin) => {
-                        //    return ( <Link to={"/restomenu/" +restoin.brand_id} keys={restoin.brand_id}>
-                        return      <Restocards {...restoin}  />
-                            // </Link>)
+                           return ( <Link to={"/restomenu/" +restoin.brand_id} keys={restoin.brand_id}>
+                              <Restocards {...restoin}  />
+                            </Link>)
                         }
                         )}
                 </div>
