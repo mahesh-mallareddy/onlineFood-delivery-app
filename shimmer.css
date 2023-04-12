@@ -19,7 +19,7 @@
 .cards-grid {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .shimmer-grid {
@@ -82,7 +82,7 @@
     position: relative;
     top: 1.7em;
     left: 5em;
-border-radius: 10px;
+    border-radius: 10px;
 }
 
 @keyframes shimmer {
@@ -93,4 +93,74 @@ border-radius: 10px;
     100% {
         transform: translateX(100%);
     }
+}
+
+/* ======================================= shimmer effect for menu  */
+
+.cards-grid .cards_menu_shimmer {
+    width: 18em;
+    height: 19em;
+    background-color: #b7bec382;
+    margin: 15px 10px;
+}
+
+.shimmer_menu_box {
+    width: 15.7em;
+    height: 8.6em;
+    background-color: #b7bec382;
+    position: relative;
+    top: 1em;
+    left: 1.2em;
+    border-radius: 5px;
+}
+
+.cards_menu_shimmer box {
+    width: 15.7em;
+    height: 3em;
+    background-color: #b7bec382;
+    position: relative;
+    top: 2.5em;
+    left: 1.2em;
+    display: block;
+    border-radius: 15px;
+}
+
+.cards_menu_shimmer boxb {
+    width: 15.7em;
+    height: 1.5em;
+    background-color: #b7bec382;
+    position: relative;
+    top: 3.5em;
+    left: 1.2em;
+    border-radius: 10px;
+    display: block;
+}
+
+.shimmer_menu {
+    width: 100%;
+    height: 18.5em;
+    background-color: #b7bec382;
+    margin: 0 0 4em 0;
+}
+
+.shimmer_menu head {
+    height: 13em;
+    background-color: #c7cdd0;
+    width: 14em;
+    display: block;
+    top: 2.5em;
+    left: 6.2em;
+    position: relative;
+}
+
+.shimmer_menu heada {
+    width: 46em;
+    height: 1.5em;
+    background-color: #b7bec382;
+    position: relative;
+    top: -8.5em;
+    left: 23.2em;
+    display: block;
+    border-radius: 5px;
+    margin: 1.5em 0;
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {Restomenudata , Restohead} from "./Menudestructure";
 // import { Restocards } from "./Bodycards";
+import { Shimmermenuui } from "./Shimmer";
 
 const Restomenuinfo = () => {
     const { paramsid } = useParams()
@@ -22,7 +23,9 @@ console.log(restoheaderdata)
         getrestoinfo()
     }, [])
 
-    return (
+    if (!restomenulist) return null;
+
+    return (restomenulist?.length === 0) ? (<Shimmermenuui />) : (
         <>
         <Restohead {...restomenuheader}/>
             <div>
