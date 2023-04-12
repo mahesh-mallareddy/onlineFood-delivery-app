@@ -1,0 +1,96 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    max-width: 1200PX;
+    margin: auto;
+}
+
+.card-shimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0.3) 40%);
+    animation: shimmer 1.5s infinite;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.shimmer-grid {
+    margin-top: 1em;
+    position: static;
+
+}
+
+.cards-shimmer {
+    width: 350px;
+    height: 350px;
+    margin: 15px 10px;
+    background-color: rgba(189, 200, 209, 0.507);
+
+}
+
+.shimmer_a {
+    width: 310px;
+    height: 103px;
+    background-color: #b7bec382;
+    position: relative;
+    top: 14em;
+    left: 1.3em;
+    border-radius: 5px;
+
+}
+
+.shimmer_a text {
+    width: 258px;
+    height: 25px;
+    background-color: #a8b1b760;
+    display: block;
+    left: 1em;
+    position: absolute;
+    top: 1em;
+    border-radius: 15px;
+}
+
+.shimmer_a .texttwo {
+    width: 258px;
+    height: 25px;
+    display: block;
+    left: 1em;
+    position: absolute;
+    top: 3em;
+}
+
+.shimmerbox_a {
+    width: 75em;
+    height: 5em;
+    background-color: rgba(189, 200, 209, 0.507);
+    margin: 2em 0;
+    border-radius: 5px;
+}
+
+.shimmerbox_a .box_b {
+    width: 66em;
+    height: 1.2em;
+    background-color: #c6cdd282;
+    position: relative;
+    top: 1.7em;
+    left: 5em;
+border-radius: 10px;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

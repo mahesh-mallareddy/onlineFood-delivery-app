@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import restolist from "./bodycardsdata";
 import { Link } from "react-router-dom";
-
+import {Shimmerui} from "./Shimmer"
 export const Restocards = ({ banner_image_es, brand_name, description }) => {
 
     return (
@@ -47,7 +47,9 @@ getcardsdata()
     },[])
 
 
-    return (
+    if (!restorent) return null;
+
+    return (restorent?.length === 0) ? (<Shimmerui />) : (
         <>
             <div className="sreachinput">
                 <input className="search" type="text" placeholder="Search your food"

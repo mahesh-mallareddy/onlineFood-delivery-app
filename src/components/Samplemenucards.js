@@ -1,25 +1,63 @@
+
+
+export const Card = () => {
+    return (
+        <div className="card">
+            <div className="card-shimmer"></div>
+            <div className="card-content">
+
+            </div>
+        </div>
+    );
+};
+
 export const Samplehead = () => {
     return (
-        <div className="restohead">
-            <div className="backgrnd"></div>
-            <div className="menu_maxwidth">
-                <div className=" menuheader">
-                    <div className="menu_img">
-                        <img src="https://product-assets.faasos.io/production/product/banner_image_es_1658739138126_Chicken%20Tikka%20Biryani%20%281%29.jpg" />
-                    </div>
-                    <div className="menuhead_content">
-                        <img className="menulogo" src="https://rebelplus.faasos.io/production/wildfire_cms/2JUXUZOAFH.jpeg" />
-                        <h3>The Biryani Life</h3>
-                        <p>Hyderabad </p>
-                        <div class="style_CouponCard">
-                            <p>30% off - Use Code
-                                <abbr>- FIRSTBITE</abbr>
-                            </p>
+        <>
+            <div className="restohead">
+                <div className="backgrnd"></div>
+                <div className="menu_maxwidth">
+                    <div className=" menuheader">
+                        <div className="menu_img">
+                            <img src="https://product-assets.faasos.io/production/product/banner_image_es_1658739138126_Chicken%20Tikka%20Biryani%20%281%29.jpg" />
+                        </div>
+                        <div className="menuhead_content">
+                            <img className="menulogo" src="https://rebelplus.faasos.io/production/wildfire_cms/2JUXUZOAFH.jpeg" />
+                            <h3>The Biryani Life</h3>
+                            <p>Hyderabad </p>
+                            <div class="style_CouponCard">
+                                <p>30% off - Use Code
+                                    <abbr>- FIRSTBITE</abbr>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            
+            <div className="card">
+                <div className="card-shimmer"></div>
+                <div className="card-content">
+                
+                            <div className="shimmerbox_a">
+                                <section className="box_b"></section>
+                            </div>
+                        
+                    <div className="cards-grid shimmer-grid">
+                        {Array(6)
+                            .fill("")
+                            .map((e, index) => (
+                                <div className="cards-shimmer" key={index}>
+                                    <section className="shimmer_a">
+                                        <text></text>
+                                        <text className="texttwo"></text>
+                                    </section>
+                                </div>
+                            ))}
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 
@@ -67,4 +105,7 @@ export const Samplemenu = () => {
         </div>
     </div>
 </div> */}
+
+
+
 
