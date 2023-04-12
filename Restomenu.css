@@ -106,7 +106,7 @@
 
 /* =============================== menu list Header */
 .restohead {
-    background-image: url("https://product-assets.faasos.io/production/product/banner_image_es_1658739138126_Chicken%20Tikka%20Biryani%20%281%29.jpg");
+    /* background-image: url({brand_banner_image_es} ); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 150px 0px;

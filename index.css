@@ -18,7 +18,7 @@
 .navigation {
     background-color: #e3e3e35d;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 5px 5px -5px;
-} 
+}
 
 
 .navbar>h1 {
@@ -36,9 +36,10 @@
     color: rgb(72, 72, 72);
 }
 
-.navbar  .menu h1{
+.navbar .menu h1 {
     cursor: pointer;
 }
+
 .banners {
     max-width: 1200px;
     margin: auto;
@@ -56,35 +57,38 @@
 }
 
 /* ==========body cards css */
-.restocards , .bodyheading {
+.restocards,
+.bodyheading {
     max-width: 1200px;
     margin: auto;
-    padding: 1.2rem 0px;  
-    
+    padding: 1.2rem 0px;
+
 }
 
-.bodyheading p{
-    
+.bodyheading p {
+
     color: rgb(51, 51, 51);
-font-size: 1.8rem;
-font-weight: 800;
-line-height: 1.2;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
-.restocards .restocards2{
+
+.restocards .restocards2 {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     justify-content: center;
 }
+
 /* .restocards .restocardsinfo{
   
 } */
-.restocards .cardsinfo  {
+.restocards .cardsinfo {
     margin: 0.75rem 0px;
     padding: 0 0.8rem;
     margin-bottom: 20px;
-  }
+}
 
-.restocards .cardsinfo  .restocardsinfo{
+.restocards .cardsinfo .restocardsinfo {
     background-color: rgb(237, 237, 251);
     transition: transform 300ms ease 0s;
     overflow: hidden;
@@ -94,9 +98,10 @@ line-height: 1.2;
     background-repeat: no-repeat;
     position: relative;
     height: 376px;
-min-width: 350px;
+    min-width: 350px;
 }
-.restocards .cardsinfo  .restocardsinfo:hover{
+
+.restocards .cardsinfo .restocardsinfo:hover {
     transform: scale(1.04);
     transition: all 0.3s ease 0s;
 }
@@ -110,6 +115,7 @@ min-width: 350px;
     width: 100%;
     object-fit: cover;
 }
+
 .restocards .cardsinfo .restoinfo {
     width: calc(100% - 35px);
     color: #fff;
@@ -121,36 +127,57 @@ min-width: 350px;
     bottom: 1rem;
     left: 1.1rem;
 }
-.restocards .cardsinfo .restoinfo p{
+
+.restocards .cardsinfo .restoinfo p {
     padding: 3px 8px;
     font-size: small;
 }
-.restocards .cardsinfo .restoinfo input{
+
+.restocards .cardsinfo .restoinfo input {
     padding: 0.4em 0.7em;
-border: none;
-border-radius: 6px;
-cursor: pointer;
-margin: 5px 0 0 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px 0 0 0;
+}
+
+.restocards .cardsinfo .restoinfo button {
+    box-shadow: none;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #fefeff;
+    border-radius: 4px;
+    flex-shrink: 0;
+    padding: 8px 12px;
+    font-weight: 700;
+    font-weight: 600;
+    margin: 5px 0;
+    cursor: pointer;
 }
 
 /* =======================form feedback css */
-form{
+form {
     background-color: rgba(248, 232, 254, 0.332);
 }
-form .formfeedback{
-    max-width: max-content ;
-    margin: 1em auto ;
+
+form .formfeedback {
+    max-width: max-content;
+    margin: 1em auto;
     /* padding: ; */
 }
-form .formfeedback head h2{
+
+form .formfeedback head h2 {
     padding: 5px;
 }
-.formfeedback .form1 input,.formfeedback  .form2 input{
-margin: 0.6em 0;
-padding: 0.5em 5em 0.5em 2em;
-outline: none;
+
+.formfeedback .form1 input,
+.formfeedback .form2 input {
+    margin: 0.6em 0;
+    padding: 0.5em 5em 0.5em 2em;
+    outline: none;
 }
-.formfeedback .btn button{
+
+.formfeedback .btn button {
     padding: 0.5rem 1.5rem;
     margin: 10px !important;
     background-color: rgba(78, 44, 113, 0.852);
@@ -160,28 +187,29 @@ outline: none;
     color: white;
     transition: 200ms ease-in;
 }
-.formfeedback .btn button:hover{
-  
-        background-color: rgba(107, 32, 178, 0.806);
-        transform: scale(1.09);
-    
+
+.formfeedback .btn button:hover {
+
+    background-color: rgba(107, 32, 178, 0.806);
+    transform: scale(1.09);
+
 }
-.mainfooter{
+
+.mainfooter {
     background-color: #e3e3e35d;
-padding: 1em;
+    padding: 1em;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-around;
 }
 
-.footer .foterlist ul li{
-list-style: none;
-padding: 5px 4em;
+.footer .foterlist ul li {
+    list-style: none;
+    padding: 5px 4em;
 }
 
-.footer .register h4{
-    margin:  0.5em;
+.footer .register h4 {
+    margin: 0.5em;
 }
-
-

@@ -14,7 +14,7 @@ export const Restocards = ({ banner_image_es, brand_name, description }) => {
                     <div className="restoinfotext">
                         <h4>{brand_name}</h4>
                         <p>{description}</p>
-                        <input type="button" value="Check menu" />
+                        <button>Check Menu</button>
                     </div>
                 </div>
             </div>

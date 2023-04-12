@@ -1,17 +1,18 @@
-export const Restohead = ({brand_banner_image_es,brand_rectangle_logo,brand_display_name}) => {
+export const Restohead = ({ brand_banner_image_es, brand_rectangle_logo, brand_display_name }) => {
     return (
-        <div className="restohead">
+        <div className="restohead" style={{
+            backgroundImage:`url(${brand_banner_image_es})`}}>
             <div className="backgrnd"></div>
             <div className="menu_maxwidth">
                 <div className=" menuheader">
                     <div className="menu_img">
-                        <img src={brand_banner_image_es} />
+                        <img src={brand_banner_image_es}  />
                     </div>
                     <div className="menuhead_content">
                         <img className="menulogo" src={brand_rectangle_logo} />
                         <h3>{brand_display_name}</h3>
                         <p>Hyderabad </p>
-                        <div class="style_CouponCard">
+                        <div className="style_CouponCard">
                             <p>30% off - Use Code
                                 <abbr>- FIRSTBITE</abbr>
                             </p>
@@ -23,8 +24,8 @@ export const Restohead = ({brand_banner_image_es,brand_rectangle_logo,brand_disp
     )
 }
 
-export const Restomenudata= ({product_imageUrl,product_name,small_description,display_price}) => {
-    
+export const Restomenudata = ({ product_imageUrl, product_name, small_description, display_price }) => {
+
     return (
         <div className="menudatalist" >
             <div className="menulist">
