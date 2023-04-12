@@ -6,7 +6,7 @@ import { Contact, Footer } from "./components/contact";
 import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Restomenuinfo from "./components/restomenudata";
-import Samplemenu from "./components/Samplemenucards";
+import {Samplemenu , Samplehead} from "./components/Samplemenucards";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -45,7 +45,6 @@ const Applayout = () => {
         <>
             <Nav />
             <Outlet />
-            <Contact />
             <Footer />
         </>
     )
@@ -66,7 +65,8 @@ const Approuter = createBrowserRouter([
             },
             {
                 path: "/samplemenu",
-                element: <Samplemenu/>
+                element: <Samplemenu/>,
+                element:<Samplehead/>,
             },
             {
                 path: "/restomenu/:paramsid",

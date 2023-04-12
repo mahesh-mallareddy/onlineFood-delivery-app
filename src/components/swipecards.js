@@ -9,7 +9,7 @@ export default function Swipecards({cloudinaryImageId, name, costForTwoString, s
         <h4>{name}</h4>
         <p>{costForTwoString}<span>{"Delivary time: " + slaString}</span></p>
         <p>{area}</p>
-        <input type="button" value="Order now"></input>
+        {/* <input type="button" value="Order now"></input> */}
       </div>
     </div>
   )
