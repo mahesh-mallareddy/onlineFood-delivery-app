@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Restomenudata from "./Menudestructure";
 
 const Restomenuinfo = () => {
     const { paramsid } = useParams()
@@ -19,11 +20,10 @@ const Restomenuinfo = () => {
 
     return (
         <div>
-            it is restomenu components
             <div className="restomenudata">
-                    {restomenulist.map((collection_data, index) => {
-                        return (
-                            <>
+                {restomenulist.map((collection_data, index) => {
+                    return (
+                        <>
                             <div className="menudata">
                                 <div className="menu_head">
                                     <h5 key={collection_data.collection_id}>{collection_data.collection_name}</h5>
@@ -32,33 +32,14 @@ const Restomenuinfo = () => {
 
                                     {collection_data.products.map((products_data, index) => {
                                         return (
-                                            // <li className="menulist" key={products_data.product_id}> {products_data.product_name} </li>
-                                            <div className="menudatalist"  key={products_data.product_id}>
-                                                
-                                                    <div className="menulist">
-                                                        <div className="menulist_effect">
-                                                            <div className="menulist_img">
-                                                                <img src={products_data.product_imageUrl} alt="order"/>
-                                                            </div>
-                                                            <div className="menulist_content">
-                                                                <p className="menulist_tittle">{products_data.product_name}</p>
-                                                                <p className="menulist_disc">{products_data.small_description}</p>
-                                                                <div className="menuflex">
-                                                                    <p className="menuprice">&#8377;{products_data.display_price}</p>
-                                                                    <button>Add</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                
-                                            </div>
+                                            <Restomenudata {...products_data} key={products_data.products_id} />
                                         )
                                     })}
                                 </div>
-                </div>
-                            </>
-                        )
-                    })}
+                            </div>
+                        </>
+                    )
+                })}
             </div>
         </div >
     )
