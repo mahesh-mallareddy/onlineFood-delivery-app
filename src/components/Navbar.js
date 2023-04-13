@@ -1,4 +1,7 @@
 import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faHeadset, faCartShopping, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+
 
 const Logo = () => {
     return (
@@ -13,10 +16,10 @@ const Navlist = () => {
         <>
             <div className={clicked ? "navbar navlist mobileactive" : "navlist"}>
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>ORDER</li>
-                    <li>CONTANCT</li>
+                    <li><FontAwesomeIcon icon={faHouse} size="lg" />HOME</li>
+                    <li><FontAwesomeIcon icon={faCartShopping} size="lg" />CART</li>
+                    <li><FontAwesomeIcon icon={faHeadset} size="lg" />support</li>
+                    <li className="login"><FontAwesomeIcon icon={faRightToBracket} />Login</li>
                 </ul>
             </div>
             <div className="menu">
