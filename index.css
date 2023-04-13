@@ -37,13 +37,16 @@
     display: inline-grid;
     cursor: pointer;
 }
-.navbar .navlist ul li .svg-inline--fa{
+
+.navbar .navlist ul li .svg-inline--fa {
     margin: 5px 10px;
-    }
-    .navbar .navlist ul li:hover{
-        color: rgba(74, 30, 177, 0.923);
-        border-bottom: solid 1px;
-    }
+}
+
+.navbar .navlist ul li:hover {
+    color: rgba(74, 30, 177, 0.923);
+    border-bottom: solid 1px;
+}
+
 .navbar .menu h1 {
     cursor: pointer;
 }
@@ -165,7 +168,7 @@
 
 /* =======================form feedback css */
 form {
-    background-color: rgba(248, 232, 254, 0.332);
+    margin: 6em 0;
 }
 
 form .formfeedback {
@@ -186,19 +189,21 @@ form .formfeedback head h2 {
 }
 
 .formfeedback .btn button {
-    padding: 0.5rem 1.5rem;
-    margin: 10px !important;
-    background-color: rgba(78, 44, 113, 0.852);
-    border: none;
-    border-radius: 8px;
+    box-shadow: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #4945be;
     cursor: pointer;
-    color: white;
+    border: 1px solid #4945be;
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin: 10px 20px;
+    padding: 12px 30px 10px;
+    font-weight: 600;
     transition: 200ms ease-in;
 }
 
 .formfeedback .btn button:hover {
-
-    background-color: rgba(107, 32, 178, 0.806);
     transform: scale(1.09);
 
 }
@@ -206,12 +211,14 @@ form .formfeedback head h2 {
 .mainfooter {
     background-color: #e3e3e35d;
     padding: 4em 0;
-color: rgb(98, 106, 113);
+    color: rgb(98, 106, 113);
 
 }
-.footer-info h2{
+
+.footer-info h2 {
     padding: 8px 0;
 }
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -221,11 +228,24 @@ color: rgb(98, 106, 113);
     list-style: none;
     padding: 5px 4em;
 }
-.footer .foterlist ul{
+
+.footer .foterlist ul {
     font-size: 21px;
-font-weight: 678;
-color: rgb(98, 106, 113);
+    font-weight: 678;
+    color: rgb(98, 106, 113);
 }
+
 .footer .register h4 {
     margin: 0.5em;
+}
+
+.cart{
+    height: 28em;
+display: flex;
+justify-content: center;
+align-items: center;
+color: lightslategray;
+}
+.cart h4{
+    font-size: xxx-large;
 }

@@ -6,8 +6,7 @@ import { Contact, Footer } from "./components/contact";
 import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Restomenuinfo from "./components/restomenudata";
-import {Samplemenu , Samplehead} from "./components/Samplemenucards";
-
+import Cart from "./components/cart";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
@@ -30,7 +29,7 @@ const Body = () => {
         <>
             <Banner />
             <Cards />
-          
+
             <Swiper />
         </>
     );
@@ -56,21 +55,19 @@ const Approuter = createBrowserRouter([
                 element: <Body />
             },
             {
-                path: "/contact",
-                element: <></>
-            },
-            {
-                path: "/samplemenu",
-                element: <Samplemenu/>,
-                element:<Samplehead/>,
+                path: "/cart",
+                element: <Cart />,
+            }, {
+                path: "/support",
+                element: <Contact />,
             },
             {
                 path: "/restomenu/:paramsid",
-                element: <Restomenuinfo/>
+                element: <Restomenuinfo />
             },
         ]
     },
 ]);
 
 
-root.render(<RouterProvider router={Approuter}/>)
+root.render(<RouterProvider router={Approuter} />)

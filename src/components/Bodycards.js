@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import restolist from "./bodycardsdata";
 import { Link } from "react-router-dom";
 import {Shimmerui} from "./Shimmer"
 export const Restocards = ({ banner_image_es, brand_name, description }) => {

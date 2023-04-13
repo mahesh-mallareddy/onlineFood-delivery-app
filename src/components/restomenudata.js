@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {Restomenudata , Restohead} from "./Menudestructure";
-// import { Restocards } from "./Bodycards";
 import { Shimmermenuui } from "./Shimmer";
 
 

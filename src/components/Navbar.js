@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faHeadset, faCartShopping, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
-
+import { Link } from "react-router-dom"
 
 const Logo = () => {
     return (
@@ -16,9 +16,15 @@ const Navlist = () => {
         <>
             <div className={clicked ? "navbar navlist mobileactive" : "navlist"}>
                 <ul>
+                    <Link to="/">
                     <li><FontAwesomeIcon icon={faHouse} size="lg" />HOME</li>
+                    </Link>
+                    <Link to="/cart">
                     <li><FontAwesomeIcon icon={faCartShopping} size="lg" />CART</li>
-                    <li><FontAwesomeIcon icon={faHeadset} size="lg" />support</li>
+                    </Link>
+                    <Link to="/support">
+                    <li ><FontAwesomeIcon icon={faHeadset} size="lg" />support</li>
+                    </Link>
                     <li className="login"><FontAwesomeIcon icon={faRightToBracket} />Login</li>
                 </ul>
             </div>
