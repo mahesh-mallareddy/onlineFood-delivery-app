@@ -66,7 +66,7 @@
         position: absolute;
         top: 3.5em;
         left: 0em;
-        width: 100%;
+        width: 50%;
         overflow: hidden;
         transform: translateY(0.1);
         display: none;
@@ -75,6 +75,7 @@
 
     .navbar .navlist.mobileactive {
         display: block;
+        position: static;
     }
 
     .navbar .navlist ul {

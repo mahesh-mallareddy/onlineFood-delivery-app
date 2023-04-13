@@ -170,3 +170,9 @@ font-size: 0.9rem;
     margin: 1em 0;
 
 }
+@media (max-width:700px) {
+    .restohead .menu_maxwidth .menuheader .menu_img img {
+        width: 283px;
+        height: 247px;
+}
+}
