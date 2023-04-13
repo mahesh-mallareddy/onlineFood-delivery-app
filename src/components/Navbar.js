@@ -2,6 +2,8 @@ import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faHeadset, faCartShopping, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+
 
 const Logo = () => {
     return (
@@ -29,9 +31,9 @@ const Navlist = () => {
                 </ul>
             </div>
             <div className="menu">
-                <h1 onClick={() => {
+                <h2 onClick={() => {
                     setclicked(!clicked)
-                }}>=</h1>
+                }}><FontAwesomeIcon icon={faBars} /></h2>
             </div>
         </>
     )
