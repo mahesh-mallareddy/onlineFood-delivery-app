@@ -197,9 +197,13 @@ form .formfeedback head h2 {
 
 .mainfooter {
     background-color: #e3e3e35d;
-    padding: 1em;
-}
+    padding: 4em 0;
+color: rgb(98, 106, 113);
 
+}
+.footer-info h2{
+    padding: 8px 0;
+}
 .footer {
     display: flex;
     justify-content: space-around;
@@ -209,7 +213,11 @@ form .formfeedback head h2 {
     list-style: none;
     padding: 5px 4em;
 }
-
+.footer .foterlist ul{
+    font-size: 21px;
+font-weight: 678;
+color: rgb(98, 106, 113);
+}
 .footer .register h4 {
     margin: 0.5em;
 }

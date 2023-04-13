@@ -34,7 +34,7 @@ export let Footer = () => {
     return (
         <div className="mainfooter">
         <div className="footer">
-            <div className="EAT-GOinfo" >
+            <div className="footer-info" >
                 <h2 >GO-EAT</h2>
                 <p>We are provide High Quality Foods <br/>through online and Dine at Resto </p>
             </div>

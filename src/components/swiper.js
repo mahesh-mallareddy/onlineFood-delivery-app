@@ -10,8 +10,17 @@ import 'swiper/modules/navigation/navigation.min.css';
 
 import { Navigation } from "swiper";
 
+
+const Swipecardsheading = () => (
+  <div className="bodyheading">
+      <p>Most Loved Collections</p>
+  </div>
+);
+
 export default Swiper = () => {
   return (
+    <div className="swipermain">
+        <Swipecardsheading />
     <Swiper className="swiper-maxw"
       modules={[Navigation]}
       loop={true}
@@ -71,5 +80,6 @@ export default Swiper = () => {
         </div>
       </SwiperSlide>
     </Swiper>
+    </div>
   );
 };

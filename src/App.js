@@ -23,18 +23,14 @@ const Banner = () => {
     )
 }
 
-const Swipecardsheading = () => (
-    <div className="bodyheading">
-        <p>Most Loved Collections</p>
-    </div>
-);
+
 
 const Body = () => {
     return (
         <>
             <Banner />
             <Cards />
-            <Swipecardsheading />
+          
             <Swiper />
         </>
     );

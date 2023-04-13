@@ -1,36 +1,42 @@
-:root{
+:root {
     --swiper-navigation-size: 25px;
 }
-.cards-grid{
+
+.cards-grid {
     margin: 10px;
     display: block;
     max-width: fit-content;
 }
 
-.foodcards{
+.foodcards {
     max-width: fit-content;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 1.5px 2.5px;
     margin: 10px;
     border-radius: 10px;
 }
-.foodcards .images{
+
+.foodcards .images {
     max-width: 260px;
     margin: auto;
 }
-.foodcards img{
+
+.foodcards img {
     /* border-radius: 10px; */
-    width:-moz-available;
+    width: -moz-available;
 }
-.foodcards .foodsinfo{
+
+.foodcards .foodsinfo {
     padding: 2px 15px;
 }
-.foodcards .foodsinfo p{
+
+.foodcards .foodsinfo p {
     gap: 43%;
-display: flex;
-padding-top: 10px;
+    display: flex;
+    padding-top: 10px;
 }
-.foodcards .foodsinfo input{
+
+.foodcards .foodsinfo input {
     padding: 0.6rem 1.5rem;
     margin: 5px !important;
     background-color: rgba(78, 44, 113, 0.852);
@@ -41,13 +47,19 @@ padding-top: 10px;
     transition: 200ms ease-in;
 }
 
-.foodcards .foodsinfo input:hover{
+.foodcards .foodsinfo input:hover {
     background-color: rgba(107, 32, 178, 0.806);
     transform: scale(1.09);
 }
+.swipermain{
+    margin: 3em 0;
+}
+.swiper-slide {
+    margin-left: 10px;
+}
 
-.swiper-slide{
-margin-left: 10px;
+.swiper-maxw {
+    max-width: 96em;
 }
 
 
@@ -55,5 +67,5 @@ margin-left: 10px;
     .swiper-slide {
         max-width: auto;
         margin: auto auto auto 5px;
-        }
+    }
 }
