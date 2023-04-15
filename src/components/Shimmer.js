@@ -3,7 +3,7 @@ export const Shimmerui = () => {
         <div className="card">
             <div className="card-shimmer"></div>
             <div className="card-content">
-                <div className="shimmerbox_a">
+                <div className="shimmerbox_a" key={1}>
                     <section className="box_b"></section>
                 </div>
                 <div className="cards-grid shimmer-grid">
@@ -28,7 +28,7 @@ export const Shimmermenuui = () => {
         <div className="card">
             <div className="card-shimmer"></div>
             <div className="card-content">
-                <div className="shimmer_menu">
+                <div className="shimmer_menu" key={1}>
                     <head></head>
                     <heada></heada>
                     <heada></heada>

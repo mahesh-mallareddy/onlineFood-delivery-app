@@ -33,7 +33,7 @@ export default Cards = () => {
     const [getsearch, setsearch] = useState()
 
     let getcardsdata = async ()=>{
-        let fetchurl =await fetch("https://www.eatsure.com/v1/api/get_restaurants?store_id=10370&city_id=5785&");
+        let fetchurl =await fetch("http://localhost:2000/api/get_restaurants?store_id=10370&city_id=5785&");
         let data = await fetchurl.json()
         let info  = data?.data?.data
         setfiltetrrestorent(info)

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {Restomenudata , Restohead} from "./Menudestructure";
+import { Restomenudata, Restohead } from "./Menudestructure";
 import { Shimmermenuui } from "./Shimmer";
 
 
@@ -8,14 +8,14 @@ const Restomenuinfo = () => {
     const { paramsid } = useParams()
 
     const [restomenulist, setrestomenulist] = useState([])
-    const [restomenuheader,setrestomenuheader] =useState([])
+    const [restomenuheader, setrestomenuheader] = useState([])
 
     async function getrestoinfo() {
-        const fetchurl = await fetch("https://www.eatsure.com/v1/api/get_all_products/brand_id/" + paramsid + "/store_id/10370/source_id/13")
+        const fetchurl = await fetch("http://localhost:2000/get_all_products/brand_id/" + paramsid + "/store_id/10370/source_id/13")
         const data = await fetchurl.json()
         const restodata = data?.data?.collections
-const restoheaderdata  = restodata[2].products[0]
-console.log(restoheaderdata)
+        const restoheaderdata = restodata[3].products[0]
+        console.log(restoheaderdata)
         setrestomenulist(restodata)
         setrestomenuheader(restoheaderdata)
     };
@@ -27,7 +27,7 @@ console.log(restoheaderdata)
 
     return (restomenulist?.length === 0) ? (<Shimmermenuui />) : (
         <>
-        <Restohead {...restomenuheader}/>
+            <Restohead {...restomenuheader} />
             <div>
                 <div className="restomenudata">
                     {restomenulist.map((collection_data, index) => {
