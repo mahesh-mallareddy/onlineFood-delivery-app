@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {Shimmerui} from "./Shimmer"
-export const Restocards = ({ banner_image_es, brand_name, description }) => {
+import { Shimmerui } from "./Shimmer"
 
+
+export const Restocards = ({ banner_image_es, brand_name, description }) => {
     return (
         <div className="cardsinfo">
             <div className="restocardsinfo">
@@ -32,18 +33,18 @@ export default Cards = () => {
     const [filterrestorent, setfiltetrrestorent] = useState([])
     const [getsearch, setsearch] = useState()
 
-    let getcardsdata = async ()=>{
-        let fetchurl =await fetch("http://localhost:2000/api/get_restaurants?store_id=10370&city_id=5785&");
+    let getcardsdata = async () => {
+        let fetchurl = await fetch("https://foodapp-7fsj.onrender.com/api/get_restaurants?store_id=10370&city_id=5785&");
         let data = await fetchurl.json()
-        let info  = data?.data?.data
+        let info = data?.data?.data
         setfiltetrrestorent(info)
         setrestorent(info)
         console.log(info)
     }
- 
-    useEffect(()=>{
-getcardsdata()
-    },[])
+
+    useEffect(() => {
+        getcardsdata()
+    }, [])
 
 
     if (!restorent) return null;
@@ -65,8 +66,8 @@ getcardsdata()
                 <div className="restocards2">
                     {
                         filterrestorent.map((restoin) => {
-                           return ( <Link to={"/restomenu/" +restoin.brand_id} keys={restoin.brand_id}>
-                              <Restocards {...restoin}  />
+                            return (<Link to={"/restomenu/" + restoin.brand_id} keys={restoin.brand_id}>
+                                <Restocards {...restoin} />
                             </Link>)
                         }
                         )}
@@ -74,7 +75,7 @@ getcardsdata()
             </div>
         </>
     )
-}
+};
 
 export const Bodycardsheading = () => (
     <div className="bodyheading">

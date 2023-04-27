@@ -3,7 +3,7 @@ export let Contact = () => {
         <>
             <form>
                 <div className="formfeedback">
-                <div className="head"> <h2>FeedBack</h2></div>
+                    <div className="head"> <h2>FeedBack</h2></div>
                     <div className="form1">
                         <div  >
                             <input label="Email" placeholder="Enter your email address" required />
@@ -33,24 +33,24 @@ export let Contact = () => {
 export let Footer = () => {
     return (
         <div className="mainfooter">
-        <div className="footer">
-            <div className="footer-info" >
-                <h2 >GO-EAT</h2>
-                <p>We are provide High Quality Foods <br/>through online and Dine at Resto </p>
+            <div className="footer">
+                <div className="footer-info" >
+                    <h2 >GO-EAT</h2>
+                    <p>We are provide High Quality Foods <br />through online and Dine at Resto </p>
+                </div>
+                <div className="foterlist">
+                    <ul>
+                        <li>Support</li>
+                        <li>Blog</li>
+                        <li>About us</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div className="register">
+                    <h4>Sign In</h4>
+                    <h4>Sign Up</h4>
+                </div>
             </div>
-            <div className="foterlist">
-                <ul>
-                    <li>Support</li>
-                    <li>Blog</li>
-                    <li>About us</li>
-                    <li>Contact us</li>
-                </ul>
-            </div>
-            <div className="register">
-                <h4>Sign In</h4>
-                <h4>Sign Up</h4>
-            </div>
-        </div>
         </div>
     )
 }
