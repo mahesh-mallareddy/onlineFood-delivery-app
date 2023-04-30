@@ -7,6 +7,10 @@ import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Restomenuinfo from "./components/restomenudata";
 import Cart from "./components/cart";
+import { UserAuthContextProvider } from "./utils/context/userAuthcontext";
+import Login from "./components/login";
+import Signup from "./components/signup";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
@@ -29,10 +33,19 @@ const Body = () => {
         <>
             <Banner />
             <Cards />
-
             <Swiper />
         </>
     );
+};
+
+const App = () => {
+    return (
+        <>
+            <UserAuthContextProvider>
+                <Outlet />
+            </UserAuthContextProvider>
+        </>
+    )
 };
 
 const Applayout = () => {
@@ -48,24 +61,39 @@ const Applayout = () => {
 const Approuter = createBrowserRouter([
     {
         path: "/",
-        element: <Applayout />,
+        element: <App />,
         children: [
             {
                 path: "/",
-                element: <Body />
+                element: <Applayout />,
+                children: [
+                    {
+                        path: "/",
+                        element: <Body />
+                    },
+                    {
+                        path: "/cart",
+                        element: <Cart />,
+                    },
+                    {
+                        path: "/support",
+                        element: <Contact />,
+                    },
+                    {
+                        path: "/restomenu/:paramsid",
+                        element: <Restomenuinfo />
+                    },
+                ]
             },
             {
-                path: "/cart",
-                element: <Cart />,
-            }, {
-                path: "/support",
-                element: <Contact />,
+                path: "/login",
+                element: <Login />,
             },
             {
-                path: "/restomenu/:paramsid",
-                element: <Restomenuinfo />
+                path: "/signup",
+                element: <Signup />
             },
-        ]
+        ],
     },
 ]);
 
