@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Cards from "./components/Bodycards"
-import Swiper from "./components/swiper";
 import { Contact, Footer } from "./components/contact";
 import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
@@ -33,7 +32,6 @@ const Body = () => {
         <>
             <Banner />
             <Cards />
-            <Swiper />
         </>
     );
 };

@@ -1,0 +1,32 @@
+/* p-3 my-5 d-flex flex-column w-50 */
+
+.container {
+    padding: 1em;
+    margin: 8em auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 20em;
+    height: 100%;
+}
+
+.container input{
+    margin-bottom: 10px;
+    padding: 0.5em;
+   outline: none;
+}
+.container button{
+    margin-bottom: 10px;
+    padding: 0.6em;
+}
+.container .signup_box p{
+text-align: center;
+margin: 10px;
+}
+.googlebtn{
+    justify-content: center;
+    display: flex;
+}
+.nav-intro{
+    display: flex;
+align-items: center;
+}
