@@ -5,6 +5,7 @@ import { Contact, Footer } from "./components/contact";
 import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Restomenuinfo from "./components/restomenudata";
+import Restomenupage from "./components/Restomenupage";
 import Cart from "./components/cart";
 import { UserAuthContextProvider } from "./utils/context/userAuthcontext";
 import Login from "./components/login";
@@ -65,7 +66,7 @@ const Approuter = createBrowserRouter([
                     },
                     {
                         path: "/restomenu/:paramsid",
-                        element: <Restomenuinfo />
+                        element: <Restomenupage />
                     },
                 ]
             },
