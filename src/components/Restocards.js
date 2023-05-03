@@ -40,6 +40,7 @@ export default Cards = () => {
         setfiltetrrestorent(info)
         setrestorent(info)
         console.log(info)
+        console.log(data.data.data.length)
     }
 
     useEffect(() => {
@@ -49,7 +50,7 @@ export default Cards = () => {
 
     if (!restorent) return null;
 
-    return (restorent?.length === 0) ? (<Shimmerui />) : (
+    return (restorent?.length === 0) ? (<Shimmerui />) : ( 
         <>
             <div className="sreachinput">
                 <input className="search" type="text" placeholder="Search your food"

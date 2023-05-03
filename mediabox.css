@@ -27,9 +27,9 @@
     cursor: pointer;
 }
 
-.navbar .navlist {
-    position: relative;
-}
+/* .navbar .navlist {
+    position: static;
+} */
 
 
 .sreachinput {
@@ -91,6 +91,7 @@
 
     .navbar .menu {
         display: block;
+        height: fit-content;
     }
 }
 
@@ -108,5 +109,17 @@
     .sreachinput button {
         margin: 9px 1em;
         padding: 0.51em 1.7em;
+    }
+
+    
+}
+
+@media(max-width:450px) {
+    .restocards .cardsinfo .restocardsinfo {
+        height: 305px;
+        min-width: 276px;
+    }
+    .banners img {
+        width: 218px;
     }
 }

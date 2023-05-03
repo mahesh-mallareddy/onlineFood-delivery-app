@@ -164,3 +164,39 @@
     border-radius: 5px;
     margin: 1.5em 0;
 }
+@media (max-width:600px){
+    .shimmerbox_a {
+        max-width: 22em;
+        margin: 2em auto;
+    }
+    .shimmerbox_a .box_b {
+        width: 13em;
+        
+    }
+    .cards-shimmer {
+        width: 339px;
+        height: 342px;
+    }
+}
+@media (max-width:450px){
+    .shimmerbox_a {
+        max-width: 20em;
+        margin: 2em auto;
+    }
+    .cards-shimmer {
+        width: 289px;
+        height: 324px;
+    }
+    .shimmer_a {
+        width: 257px;
+        height: 89px;
+    }
+    .shimmer_a text {
+        width: 219px;
+        height: 22px;
+    }
+    .shimmer_a .texttwo {
+        width: 219px;
+        height: 22px;
+    }
+}

@@ -29,4 +29,6 @@ margin: 10px;
 .nav-intro{
     display: flex;
 align-items: center;
+transition: transform 300ms ease 0s;
+font-weight: bold;
 }

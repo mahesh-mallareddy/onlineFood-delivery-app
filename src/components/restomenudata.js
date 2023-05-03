@@ -11,8 +11,7 @@ const Restomenuinfo = () => {
     const restomenulist = useRestomenu(paramsid);
     const restomenuheader = useRestoheader(paramsid);
 
-
-
+    
     return (!restomenulist) ? (<Shimmermenuui />) : (
         <>
             <Restohead {...restomenuheader} key={paramsid} />

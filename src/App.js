@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Cards from "./components/Bodycards"
+import Cards from "./components/Restocards"
 import { Contact, Footer } from "./components/contact";
 import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
@@ -9,23 +9,9 @@ import Cart from "./components/cart";
 import { UserAuthContextProvider } from "./utils/context/userAuthcontext";
 import Login from "./components/login";
 import Signup from "./components/signup";
+import Banner from "./components/Banner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-
-
-const Banner = () => {
-    return (
-
-        <div className="banners">
-            <img src="https://product-assets.faasos.io/production/product/image_1676454173344_WB_freeD.jpg" />
-            <img src="https://product-assets.faasos.io/production/product/image_1663134309558_8_1000x500.jpg" />
-        </div>
-
-    )
-}
-
-
 
 const Body = () => {
     return (
