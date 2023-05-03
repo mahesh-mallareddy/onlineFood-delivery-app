@@ -7,7 +7,7 @@ const Restomenupage = () => {
     const { paramsid } = useParams()
 
     const restomenuheader = useRestoheader(paramsid);
-    return (
+    return (!restomenulist) ? (<Shimmermenuui />) :(
         <>
             <Restohead {...restomenuheader} key={paramsid} />
             <Restomenuinfo />
