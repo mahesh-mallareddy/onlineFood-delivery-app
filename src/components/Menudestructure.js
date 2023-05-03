@@ -24,8 +24,8 @@ export const Restohead = ({ brand_banner_image_es, brand_rectangle_logo, brand_d
     )
 }
 
-export const Restomenudata = ({ product_imageUrl, product_name, small_description, display_price }) => {
-
+export const Restomenudata = ({itemlist}) => {
+  const { product_imageUrl, product_name, small_description, display_price } = itemlist
     return (
         <div className="menudatalist" >
             <div className="menulist">
