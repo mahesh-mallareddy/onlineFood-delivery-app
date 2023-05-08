@@ -1,6 +1,6 @@
 import Restomenuinfo from "./restomenudata";
 import { Restohead } from "./Menudestructure";
-import { useRestoheader , useRestomenu } from "../utils/useRestomenu";
+import { useRestoheader, useRestomenu } from "../utils/useRestomenu";
 import { useParams } from "react-router-dom";
 import { Shimmermenuui } from "./Shimmer";
 
@@ -16,7 +16,7 @@ const Restomenupage = () => {
                 <div className="restomenudata">
                     {
                         restomenulist.map((menuiteminfo) => {
-                         return   <Restomenuinfo collection_data={menuiteminfo} />
+                            return <Restomenuinfo collection_data={menuiteminfo} />
                         })
                     };
                 </div>
