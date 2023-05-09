@@ -25,7 +25,7 @@ const Restomenuinfo = ({ collection_data }) => {
 
                         {collection_data.products.map((products_data, index) => {
                             return (
-                                <Restomenudata itemlist={products_data} key={products_data.products_id} />
+                                <Restomenudata item={products_data} key={products_data.products_id} />
                             )
                         })}
                     </div>)

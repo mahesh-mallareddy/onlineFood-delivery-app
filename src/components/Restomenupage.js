@@ -18,7 +18,7 @@ const Restomenupage = () => {
                         restomenulist.map((menuiteminfo) => {
                             return <Restomenuinfo collection_data={menuiteminfo} />
                         })
-                    };
+                    }
                 </div>
             </div>
         </>

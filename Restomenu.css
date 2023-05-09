@@ -1,12 +1,15 @@
 .restomenudata {
-    max-width: 1100px;
+    max-width: 800px;
     margin: auto;
 }
 
 .menudata .menu_head {
-    font-size: x-large;
+    font-size: large;
+    color: #5b5050;
 }
-
+.restomenudata .menudata{
+margin: 0.8em;
+}
 .menudata .menulist .menulist_img {
     max-height: 200px;
     /* max-width: 250px; */
@@ -172,4 +175,25 @@ font-size: 0.9rem;
         width: 283px;
         height: 247px;
 }
+}
+
+@media(max-width:950px){
+    .restomenudata {
+        max-width: 500px;
+        margin: auto;
+      }
+}
+@media(max-width:650px){
+    .restomenudata {
+        max-width: 400px;
+        margin: auto;
+      }
+      .menudata .menu_head {
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 0.7;
+        letter-spacing: -0.047em;
+        font-weight: 600;
+       }
+       
 }

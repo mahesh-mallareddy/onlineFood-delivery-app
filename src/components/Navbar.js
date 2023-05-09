@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { useUserAuth } from "../utils/context/userAuthcontext"
 import { useNavigate } from "react-router-dom"
+import { useSelector } from "react-redux"
 
 const Logo = () => {
     return (
