@@ -12,6 +12,8 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import Banner from "./components/Banner";
 import Error from "./components/Error";
+import { Provider } from "react-redux";
+import store from "./utils/store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const Body = () => {
@@ -26,9 +28,11 @@ const Body = () => {
 const App = () => {
     return (
         <>
+        <Provider store={store}>
             <UserAuthContextProvider>
                 <Outlet />
             </UserAuthContextProvider>
+        </Provider>
         </>
     )
 };
