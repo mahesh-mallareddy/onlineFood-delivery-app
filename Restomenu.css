@@ -1,15 +1,18 @@
 .restomenudata {
     max-width: 800px;
     margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .menudata .menu_head {
     font-size: large;
     color: #5b5050;
 }
-.restomenudata .menudata{
-margin: 0.8em;
+
+.restomenudata .menudata {
+    margin: 1.3em;
 }
+
 .menudata .menulist .menulist_img {
     max-height: 200px;
     /* max-width: 250px; */
@@ -163,37 +166,78 @@ margin: 0.8em;
     color: rgb(51, 51, 51);
     padding: 0.5rem 0.7rem;
     font-weight: 790;
-font-size: 0.9rem;
+    font-size: 0.9rem;
     border-radius: 0.4rem;
     background-color: rgb(206, 236, 252);
     text-align: center;
     margin: 1em 0;
 
 }
+
 @media (max-width:700px) {
     .restohead .menu_maxwidth .menuheader .menu_img img {
         width: 283px;
         height: 247px;
-}
+    }
 }
 
-@media(max-width:950px){
+@media(max-width:950px) {
     .restomenudata {
         max-width: 500px;
         margin: auto;
-      }
+    }
 }
-@media(max-width:650px){
+
+@media(max-width:650px) {
     .restomenudata {
         max-width: 400px;
         margin: auto;
-      }
-      .menudata .menu_head {
+    }
+
+    .menudata .menu_head {
         cursor: pointer;
         font-size: 17px;
         line-height: 0.7;
         letter-spacing: -0.047em;
         font-weight: 600;
-       }
-       
+    }
+
+}
+
+@media(max-width:450px) {
+    .restomenudata {
+        max-width: 300px;
+    }
+}
+
+
+.checkout {
+    max-height: 8rem;
+    height: 4em;
+    padding: 0px auto;
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(209, 209, 209) 0px 0px 21px;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: 0.3s ease 0s 1 normal forwards running smoothScroll;
+    display: flex;
+    position: fixed;
+}
+
+.checkout button{
+    max-width: 328px;
+    color: #fff;
+    box-shadow: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: #4945be;
+    border: 1px solid #0000;
+    border-radius: 4px;
+    padding: 10px 3em;
+    font-size: 1rem;
+    font-weight: 600;
 }

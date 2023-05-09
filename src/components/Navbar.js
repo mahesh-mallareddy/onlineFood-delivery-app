@@ -41,7 +41,7 @@ const Navlist = () => {
                     <li><FontAwesomeIcon icon={faHouse} size="lg" />HOME</li>
                     </Link>
                     <Link to="/cart">
-                    <li><FontAwesomeIcon icon={faCartShopping} size="lg" />CART{totalItemsCount}</li>
+                    <li><FontAwesomeIcon icon={faCartShopping} size="lg" />CART {totalItemsCount}</li>
                     </Link>
                     <Link to="/support">
                     <li ><FontAwesomeIcon icon={faHeadset} size="lg" />support</li>

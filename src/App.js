@@ -60,19 +60,23 @@ const Approuter = createBrowserRouter([
                 children: [
                     {
                         path: "/",
-                        element: <Body />
+                        element: <Body />,
+                        errorElement:<Error/>,
                     },
                     {
                         path: "/cart",
                         element: <Cart />,
+                        errorElement:<Error/>,
                     },
                     {
                         path: "/support",
                         element: <Contact />,
+                        errorElement:<Error/>,
                     },
                     {
                         path: "/restomenu/:paramsid",
-                        element: <Restomenupage />
+                        element: <Restomenupage />,
+                        errorElement:<Error/>,
                     },
                 ]
             },
