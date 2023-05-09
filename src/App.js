@@ -4,9 +4,8 @@ import Cards from "./components/Restocards"
 import { Contact, Footer } from "./components/contact";
 import Nav from "./components/Navbar";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Restomenuinfo from "./components/restomenudata";
 import Restomenupage from "./components/Restomenupage";
-// import Cart from "./components/cart";
+import Cart from "./components/Cart";
 import { UserAuthContextProvider } from "./utils/context/userAuthcontext";
 import Login from "./components/login";
 import Signup from "./components/signup";
@@ -62,10 +61,10 @@ const Approuter = createBrowserRouter([
                         path: "/",
                         element: <Body />
                     },
-                    // {
-                    //     path: "/cart",
-                    //     element: <Cart />,
-                    // },
+                    {
+                        path: "/cart",
+                        element: <Cart />,
+                    },
                     {
                         path: "/support",
                         element: <Contact />,

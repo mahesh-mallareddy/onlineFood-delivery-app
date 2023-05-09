@@ -17,6 +17,7 @@ const Navlist = () => {
     const [clicked, setclicked] = useState(false)
     const { logOut, stateuser } = useUserAuth();
     const navigate = useNavigate();
+    const totalItemsCount = useSelector((state) => state.cart.totalItemsCount)
 
     const handleSignOut = async () => {
         try {
@@ -39,7 +40,7 @@ const Navlist = () => {
                     <li><FontAwesomeIcon icon={faHouse} size="lg" />HOME</li>
                     </Link>
                     <Link to="/cart">
-                    <li><FontAwesomeIcon icon={faCartShopping} size="lg" />CART</li>
+                    <li><FontAwesomeIcon icon={faCartShopping} size="lg" />CART{totalItemsCount}</li>
                     </Link>
                     <Link to="/support">
                     <li ><FontAwesomeIcon icon={faHeadset} size="lg" />support</li>

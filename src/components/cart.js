@@ -14,11 +14,11 @@ export const Cartui = () => {
     <>
       <div className='cartmenu'>
         <h3 style={{ textAlign: 'center' }}>cart Details</h3>
-        <div style={{ margin: '1em' }} className='cartmenu_box'>
+        <div className='cartmenu_box'>
           {Object.values(cartdata).map((itemdata) => {
             return (
-              <div style={{ margin: '1em' }} className='cartmenu_data'>
-                <div className='cartmenu_ brandname'>
+              <div  className='cartmenu_data'>
+                <div className='cartmenu_brandname'>
                   <h3>{itemdata.brand_display_name}Ovenstory</h3>
                 </div>
                 <div className='cartmenu_itemname'>
@@ -62,7 +62,7 @@ export default Cart = () => {
   const cartdata = useSelector((store) => store.cart.items)
 
   return (Object.values(cartdata).length) > 0 ? (
-    <div style={{ display: 'flex', margin: '1em 0' }}>
+    <div className='cart_page'>
       <CartauthFallback />
       <Cartui />
     </div>

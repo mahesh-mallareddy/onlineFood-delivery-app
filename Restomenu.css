@@ -82,7 +82,6 @@
 }
 
 .menudata .menudatalist .menulist .menulist_content button {
-    position: relative;
     border: 1px solid rgb(73, 69, 190);
     box-shadow: none;
     font-weight: 600;
@@ -91,7 +90,7 @@
     text-transform: capitalize;
     flex-shrink: 0;
     color: rgb(73, 69, 190);
-    padding: 12px 30px 10px;
+    padding: 3px 12px;
     -moz-box-align: center !important;
     align-items: center !important;
 }
