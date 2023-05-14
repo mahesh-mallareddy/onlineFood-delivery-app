@@ -10,7 +10,7 @@ export const useRestomenu = (paramsid) => {
     }, []);
 
     async function getrestoinfo() {
-        const fetchurl = await fetch("https://foodapp-7fsj.onrender.com/get_all_products/brand_id/" + paramsid + "/store_id/10370/source_id/13");
+        const fetchurl = await fetch("https://node-foodapp-code-madpur.onrender.com/get_all_products/brand_id/" + paramsid + "/store_id/10370/source_id/13");
         const data = await fetchurl.json()
         const restodata = data?.data?.collections
         const restoheaderdata = restodata[3].products[0]

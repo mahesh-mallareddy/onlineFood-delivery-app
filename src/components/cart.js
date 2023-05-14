@@ -51,7 +51,7 @@ export const Cartui = () => {
           })
           }
         </div>
-        <h3>{"₹ " + getItemTotal()}</h3>
+        <h3>To pay {"₹ " + getItemTotal()}</h3>
       </div>
     </>
 
